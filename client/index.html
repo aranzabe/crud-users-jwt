@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Prueba Users API</title>
+</head>
+<body>
+  <h1>Prueba Users API</h1>
+
+  <h2>Login</h2>
+  <input type="email" id="email" placeholder="Email" value="admin@example.com">
+  <input type="password" id="password" placeholder="Password" value="123456">
+  <button onclick="login()">Login</button>
+  <p id="loginStatus"></p>
+
+  <hr>
+
+  <h2>Usuarios</h2>
+  <button onclick="getAllUsers()">Ver todos los usuarios</button>
+  <div id="usersList"></div>
+
+  <h3>Crear usuario</h3>
+  <input type="text" id="newName" placeholder="Nombre">
+  <input type="email" id="newEmail" placeholder="Email">
+  <input type="number" id="newEdad" placeholder="Edad">
+  <input type="text" id="newRole" placeholder="Rol (admin/user)">
+  <button onclick="createUser()">Crear</button>
+  <p id="createStatus"></p>
+
+  <h3>Buscar usuario por ID</h3>
+  <input type="number" id="searchId" placeholder="ID usuario">
+  <button onclick="getUserById()">Buscar</button>
+  <div id="userResult"></div>
+
+  <h3>Borrar usuario</h3>
+  <input type="number" id="deleteId" placeholder="ID usuario">
+  <button onclick="deleteUser()">Borrar</button>
+  <p id="deleteStatus"></p>
+
+  <script src="app.js"></script>
+</body>
+</html>
