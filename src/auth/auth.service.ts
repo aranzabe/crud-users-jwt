@@ -6,6 +6,9 @@ import { UsersService } from '../users/users.service';
 export class AuthService {
   
 
+  /*
+  La variable this.jwtService no la defines manualmente dentro de la clase; se inyecta automáticamente gracias a la inyección de dependencias de NestJS.
+  */
   constructor(private readonly usersService: UsersService, private jwtService: JwtService) {}
 
   async validateUser(email: string, pass: string) {
