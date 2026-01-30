@@ -1,5 +1,5 @@
 const API_BASE = 'http://localhost:3000';
-let token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpZWdvQGV4YW1wbGUuY29tIiwic3ViIjoyLCJyb2xlcyI6WyJ1c2VyIl0sImlhdCI6MTc2OTM0NjMyMSwiZXhwIjoxNzY5MzQ5OTIxfQ.PqTJi8DhYFY4ni8c1QHwrm4tykgxDzOGkeXhvXq9QWU';
+let token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpZWdvQGV4YW1wbGUuY29tIiwic3ViIjoyLCJyb2xlcyI6WyJ1c2VyIl0sImlhdCI6MTc2OTcwOTg1MCwiZXhwIjoxNzY5NzEzNDUwfQ.n9i_VDYgkhK-LQhGsST2dfQL72F3MRaWBuUIUxvnHoc';
 
 // --- FUNCIONES AUXILIARES ---
 async function fetchJSON(url, options = {}) {

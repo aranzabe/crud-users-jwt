@@ -22,6 +22,41 @@ nest g guard auth/roles
 touch src/auth/roles.decorator.ts
 
 ```
+Crear strategy para JWT:
+```jsx
+nest g provider auth/jwt.strategy
+```
+
+Crear guard para JWT:
+```jsx
+nest g guard auth/jwt
+```
+
+Resumen:
+```jsx
+nest new api
+cd api
+
+yarn add @nestjs/jwt @nestjs/passport passport passport-jwt
+yarn add -D @types/bcrypt
+
+nest g module auth
+nest g service auth
+nest g controller auth
+nest g provider auth/jwt.strategy
+nest g guard auth/jwt
+
+```
+
+Para los roles.
+**roles.decorator.ts**
+```jsx
+nest g provider auth/roles.decorator --flat
+```
+Y **roles.guard.ts**
+```jsx
+nest g guard auth/roles
+```
 
 **Configurar el servicio de autenticación**
 
