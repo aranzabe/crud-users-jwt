@@ -19,8 +19,6 @@ nest generate module auth
 nest generate service auth --no-spec
 nest generate controller auth --no-spec
 nest g guard auth/roles
-touch src/auth/roles.decorator.ts
-
 ```
 Crear strategy para JWT:
 ```jsx
